@@ -41,6 +41,12 @@ body {
   width: calc(100% - 80px);
   margin: 0 auto;
 }
+
+.full_view .ly-layout__inner{
+  width: 100%;
+}
+
+
 @media screen and (max-width: 767px){
   .ly-layout__inner{
     width: 100%;
@@ -52,7 +58,7 @@ body {
 .ly-layout__wrapper{
   padding-top: 120px;
   background-color: #f8f8f8;
-  padding: 120px 40px 120px;
+  padding: 120px 0px 120px;
   box-sizing: border-box;
   margin-bottom: 40px;
 }@media screen and (max-width: 767px){
@@ -60,6 +66,10 @@ body {
     padding: 80px 0px 80px;
     margin-bottom: 0;
   }
+}
+
+.full_view .ly-layout__wrapper{
+  background-color: #fff;
 }
 
 .header {

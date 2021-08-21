@@ -10,8 +10,10 @@
     <!--<button @click="onClick">
       Change
     </button>-->
-
-    <List />
+    <div class="p-inner">
+      <List />
+    </div>
+    
 
   </Layout>
 </template>
@@ -22,6 +24,9 @@ import List from '~/components/List.vue'
 import PageTitle from '~/components/PageTitle.vue'
 
 export default {
+  metaInfo: {
+    title: 'DAI IMANISHI PORTFOLIO SITE',
+  },
   components: {
     Card,
     List,

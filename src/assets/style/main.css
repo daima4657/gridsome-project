@@ -2,3 +2,40 @@
 	margin-bottom: 30px;
 }
 
+.p-inner{
+	width: calc(100% - 80px);
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.p-table{
+	position: relative;
+	padding: 0px 0;
+}
+
+.p-table:after{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 150px;
+	height: 100%;
+	width: 1px;
+	display: inline-block;
+	background-color: #212121;
+}
+
+.p-table__tr{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 0;
+}
+
+.p-table__th{
+	width: 170px;
+}
+
+.p-table__td{
+	width: calc(100% - 170px);
+	padding-left: 20px;
+	box-sizing: border-box;
+}
