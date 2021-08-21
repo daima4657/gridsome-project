@@ -9,7 +9,7 @@
       <g-image alt="" src="~/image/web_cooding_cap.jpg" />
     </div>
 
-    <h1 class="p-h1">ここは今西 大のポートフォリオサイトです。</h1>
+    <h1 class="p-h1">ここは今西 大のポートフォリオサイトです!</h1>
 
     <p>
       WEBサイト制作/Wordpressカスタマイズ/ゲーム制作
