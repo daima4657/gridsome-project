@@ -3,8 +3,11 @@
   <Layout>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!--<g-image alt="Example image" src="~/favicon.png" width="135" />-->
-
     <!--<PageTitle v-bind:text="Project." />-->
+
+    <Intro />
+
+
     <PageTitle v-bind:text="pageTitle"></PageTitle>
 
     <!--<button @click="onClick">
@@ -19,6 +22,7 @@
 </template>
 
 <script>
+import Intro from '~/components/Intro.vue'
 import Card from '~/components/Card.vue'
 import List from '~/components/List.vue'
 import PageTitle from '~/components/PageTitle.vue'
@@ -26,8 +30,12 @@ import PageTitle from '~/components/PageTitle.vue'
 export default {
   metaInfo: {
     title: 'DAI IMANISHI PORTFOLIO SITE',
+    bodyAttrs: {
+      id : 'top',
+    },
   },
   components: {
+    Intro,
     Card,
     List,
     PageTitle

@@ -1,10 +1,14 @@
 <template>
   <div class="ly-layout">
+    
     <div class="ly-layout__inner">
       <div class="ly-layout__wrapper">
         <header class="header">
-          <strong class="logo">
-            <g-link to="/">DAI IMANISHI PORTFOLIO SITE</g-link>
+          <strong class="logo js-popup_logo">
+            <span class="logo__wrapper js-popup_logo__wrapper">
+              <g-link to="/">DAI IMANISHI PORTFOLIO SITE</g-link>
+            </span>
+            
           </strong>
           <!--<nav class="nav">
             <g-link class="nav__link" to="/">Home</g-link>
@@ -35,6 +39,30 @@ body {
   padding:0;
   line-height: 1.5;
 }
+
+.js-popup_logo{
+  overflow: hidden;
+}
+
+#top .js-popup_logo__wrapper{
+  position: relative;
+  opacity: 0;
+  animation: popupLogo 600ms cubic-bezier(0.7,0,0.3,1) 2000ms forwards;
+  bottom: -40px;
+}
+
+@keyframes popupLogo{
+  0%{
+    opacity: 0;
+    bottom: -40px;
+  }
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+
 
 .ly-layout__inner{
   padding-top: 40px;

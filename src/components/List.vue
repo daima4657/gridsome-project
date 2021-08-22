@@ -1,7 +1,7 @@
 <template>
   <div class="p-list">
-    <div class="p-list__wrapper">
-      <g-link to="/project/web-cooding/" class="p-list__item">
+    <div class="p-list__wrapper js-list_popup">
+      <g-link to="/project/web-cooding/" class="p-list__item js-list_popup__item">
         <div class="p-list__item__bg" style="background-color:#0B0C10;"></div>
         <div class="p-list__item__img">
           <g-image alt="" src="~/image/webcooding_tmn.jpg" class="__img" />
@@ -15,7 +15,7 @@
           </div>
         </div>
       </g-link>
-      <g-link to="/project/ec-cooding/" class="p-list__item">
+      <g-link to="/project/ec-cooding/" class="p-list__item js-list_popup__item">
         <div class="p-list__item__bg" style="background-color:#05386b;"></div>
         <div class="p-list__item__img">
           <g-image alt="" src="~/image/ec_tmn.jpg" class="__img" />
@@ -29,7 +29,7 @@
           </div>
         </div>
       </g-link>
-      <g-link to="/project/web-app/" class="p-list__item">
+      <g-link to="/project/web-app/" class="p-list__item js-list_popup__item">
         <div class="p-list__item__bg" style="background-color:#fc4445;"></div>
         <div class="p-list__item__img">
           <g-image alt="" src="~/image/webapp_tmn.jpg" class="__img" />
@@ -43,7 +43,7 @@
           </div>
         </div>
       </g-link>
-      <g-link to="/project/game-development/" class="p-list__item">
+      <g-link to="/project/game-development/" class="p-list__item js-list_popup__item">
         <div class="p-list__item__bg" style="background-color:#7395ae;"></div>
         <div class="p-list__item__img">
           <g-image alt="" src="~/image/unity_tmn.jpg" class="__img" />
@@ -68,6 +68,25 @@ export default {
   data () {
     return {
       message: 'Try change me!'
+    }
+  },
+  mounted () {
+    let target = document.querySelectorAll('.js-list_popup__item');
+    let loop_count = 0;
+
+    setTimeout(()=>{
+      activatePerItem(target);
+    },1300);
+
+    function activatePerItem(target){
+      target[loop_count].classList.add("active");
+      loop_count++
+      if(loop_count < target.length){
+        setTimeout(()=>{
+          activatePerItem(target);
+        },120);
+        
+      }
     }
   },
   methods: {

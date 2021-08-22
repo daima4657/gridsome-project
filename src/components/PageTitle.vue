@@ -30,7 +30,7 @@ export default {
 
     setTimeout(()=>{
       activatePerChild(children);
-    },100);
+    },1300);
 
     function activatePerChild(target){
       target[loop_count].classList.add("active");
