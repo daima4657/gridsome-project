@@ -160,12 +160,31 @@ export default {
   margin-right: 10px;
   margin-bottom: 10px;
   overflow: hidden;
+}@media screen and (max-width: 1000px){
+  .p-list__item{
+    width: calc((100% - 10px)/2);
+    margin-right: 0;
+  }
 }@media screen and (max-width: 767px){
   .p-list__item{
     width: 100%;
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 1001px){
+  .p-list__item:nth-child(3n){
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .p-list__item:nth-child(even){
+    margin-left: auto;
+  }
+}
+
+
 
 .p-list__item:after{
   content:"";
@@ -197,9 +216,7 @@ export default {
 }
 
 
-.p-list__item:nth-child(3n){
-  margin-right: 0;
-}
+
 
 
 .p-list__item__img > .__img{

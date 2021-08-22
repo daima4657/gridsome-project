@@ -16,10 +16,34 @@
     <div class="p-inner">
       <List />
     </div>
-    
+
+    <!--<ul>
+      <li v-for="edge in $page.news.edges" :key="edge.node.id">
+        <h2></h2>
+        <g-link :to="'/projects/' + edge.node.id">
+          {{ edge.node.main_description }}
+        </g-link>
+      </li>
+    </ul>-->
+
+
 
   </Layout>
 </template>
+
+<page-query>
+query {
+  news: allProjects {
+    edges {
+      node {
+        id
+        main_description
+        url_slug
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Intro from '~/components/Intro.vue'

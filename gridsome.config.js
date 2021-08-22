@@ -6,6 +6,14 @@
 
 module.exports = {
   siteName: "今西 大のポートフォリオサイト",
+  templates: {
+    Projects: [
+      {
+        path: '/projects/:id',
+        component: './src/templates/Projects.vue'
+      }
+    ]
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
