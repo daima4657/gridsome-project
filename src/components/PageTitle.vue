@@ -50,9 +50,6 @@ export default {
     //test();
   },
   methods: {
-    window:onload = function(){
-      
-    }
   }
 }
 
