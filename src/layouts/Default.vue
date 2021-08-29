@@ -84,7 +84,6 @@ body {
 
 
 .ly-layout__wrapper{
-  padding-top: 120px;
   background-color: #f8f8f8;
   padding: 120px 0px 120px;
   box-sizing: border-box;
@@ -97,7 +96,15 @@ body {
 }
 
 .full_view .ly-layout__wrapper{
-  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #f8f8f8;
+  margin-bottom: 0;
+}@media screen and (max-width: 767px){
+  .full_view .ly-layout__wrapper{
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
 }
 
 .header {

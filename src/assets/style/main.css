@@ -10,6 +10,19 @@ img{
 	width: calc(100% - 80px);
 	margin: 0 auto;
 	max-width: 1200px;
+}@media screen and (max-width: 767px){
+	.p-inner{
+		width: 90%;
+	}
+}
+
+.p-text_block{
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.p-text_block:last-child{
+	margin-bottom: 0;
 }
 
 .p-table{
@@ -26,22 +39,44 @@ img{
 	width: 1px;
 	display: inline-block;
 	background-color: #212121;
+}@media screen and (max-width: 767px){
+	.p-table:after{
+		display: none;
+	}
 }
 
 .p-table__tr{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px 0;
+}@media screen and (max-width: 767px){
+	.p-table__tr{
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.p-table__tr:last-child{
+		margin-bottom: 0;
+	}
 }
 
 .p-table__th{
 	width: 170px;
+}@media screen and (max-width: 767px){
+	.p-table__th{
+		font-weight: bold;
+		width: 100%;
+	}
 }
 
 .p-table__td{
 	width: calc(100% - 170px);
 	padding-left: 20px;
 	box-sizing: border-box;
+}@media screen and (max-width: 767px){
+	.p-table__td{
+		width: 100%;
+		padding-left: 0;
+	}
 }
 
 .pageTitle__text{
@@ -75,17 +110,23 @@ img{
 	}
 }
 
-.js-popup{
+.js-scrl_target__popup{
 	overflow: hidden;
 }
 
-.js-popup__wrapper{
+.js-scrl_target__wrapper{
 	transform:translateY(100%);
 	opacity: 0;
-	animation: popup 600ms cubic-bezier(0.7,0,0.3,1) 400ms forwards;
+	transition: all 600ms cubic-bezier(0.7,0,0.3,1);
+	/*animation: popup 600ms cubic-bezier(0.7,0,0.3,1) 400ms forwards;*/
 }
 
-@keyframes popup{
+.js-scrl_target.is-fire .js-scrl_target__wrapper{
+	opacity: 1;
+	transform:translateY(0%);
+}
+
+/*@keyframes popup{
 	0%{
 		opacity: 0;
 		transform:translateY(100%);
@@ -94,7 +135,7 @@ img{
 		opacity: 1;
 		transform:translateY(0%);
 	}
-}
+}*/
 
 
 
@@ -104,7 +145,7 @@ img{
 	position: relative;
 	top: 60px;
 	opacity: 0;
-	transition:all 600ms 100ms cubic-bezier(0.7,0,0.3,1);
+	transition:all 600ms 200ms cubic-bezier(0.7,0,0.3,1);
 	will-change: top;
 }
 
@@ -115,22 +156,57 @@ img{
 
 
 /*project*/
+
+.p-project_single__wrapper{
+	margin-bottom: 170px;
+}@media screen and (max-width: 767px){
+	.p-project_single__wrapper{
+		margin-bottom: 90px;
+	}
+}
+
+.p-project_single__wrapper:last-child{
+	margin-bottom: 0;
+}
+
+.p-project_single__wrapper__wrapper{
+	padding: 0 30px;
+}@media screen and (max-width: 767px){
+	.p-project_single__wrapper__wrapper{
+		padding: 0;
+	}
+}
+
+.p-project_single__image{
+	position: relative;
+	margin-bottom: 40px;
+	overflow: hidden;
+}@media screen and (max-width: 767px){
 	.p-project_single__image{
-		position: relative;
-		margin-bottom: 40px;
-		overflow: hidden;
+		margin-bottom: 30px;
 	}
-	.p-project_single__image:after{
-		content:"";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #fff;
-		transform:translateY(0);
-		animation: profile_hero_open 600ms cubic-bezier(0.7,0,0.3,1) 200ms forwards;
-	}
+}
+.p-project_single__image:after{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f8f8f8;
+	transform:translateY(0);
+	transition: all 600ms 200ms cubic-bezier(0.7,0,0.3,1);
+}
+
+.p-project_single__image.__instant_open:after{
+	animation: profile_hero_open 600ms cubic-bezier(0.7,0,0.3,1) 200ms forwards;
+}
+
+.p-project_single__image.is-fire:after{
+	transform:translateY(-100%);
+}
+
+
 
 @keyframes profile_hero_open{
 	0%{
@@ -144,6 +220,10 @@ img{
 
 	.p-project_single__head{
 		margin-bottom: 60px;
+	}@media screen and (max-width: 767px){
+		.p-project_single__head{
+			margin-bottom: 30px;
+		}
 	}
 	.p-project_single__head > .__title{
 		font-size: 24px;
@@ -156,4 +236,24 @@ img{
 	.p-project_single_hero{
 		width: 100%;
 		margin-bottom: 0px;
+	}
+
+	.p-project_single__head__title{
+		font-size: 24px;
+		margin-bottom: 20px;
+		font-weight: bold;
+		letter-spacing: 0.1em;
+	}@media screen and (max-width: 767px){
+			.p-project_single__head__title{
+				font-size: 18px;
+				margin-bottom: 15px;
+			}
+	}
+	.p-project_single__head__title > .__text{
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dashed rgb(252, 68, 69);
+	}
+	.p-project_single__head__text{
+		letter-spacing: 0.1em;
 	}
