@@ -53,7 +53,7 @@ import PageTitle from '~/components/PageTitle.vue'
 
 export default {
   metaInfo: {
-    title: 'DAI IMANISHI PORTFOLIO SITE',
+    title: 'DAI IMANISHI PORTFOLIO SITE.',
     bodyAttrs: {
       id : 'top',
     },
