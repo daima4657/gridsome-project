@@ -71,7 +71,7 @@ export default {
   },
   methods: {
     onClick () {
-      console.log("clicked!");
+      console.log("clicked!!");
       this.pageTitle = 'Here you go :)'
     }
   }
