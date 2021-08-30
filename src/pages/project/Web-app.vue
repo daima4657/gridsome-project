@@ -33,14 +33,22 @@
 										<a href="http://memento-app.xyz/" target="_blank">http://memento-app.xyz/</a>
 									</div>
 								</div>
-							<div class="p-table__tr">
-								<div class="p-table__th">
-									使用技術
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										使用技術
+									</div>
+									<div class="p-table__td">
+										Laravel / javascript / mySQL / Apache / EC2 / S3 / route 53 / cloud front
+									</div>
 								</div>
-								<div class="p-table__td">
-									Laravel / javascript / mySQL / Apache / EC2 / S3 / route 53 / cloud front
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										githubリポジトリ
+									</div>
+									<div class="p-table__td">
+										https://github.com/daima4657/memento2
+									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 					</div>

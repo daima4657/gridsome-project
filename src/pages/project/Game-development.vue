@@ -34,14 +34,22 @@
 										<a href="https://spreadsheep.net/games/penguin/ver0_0_1/" target="_blank">https://spreadsheep.net/games/penguin/ver0_0_1/</a>
 									</div>
 								</div>
-							<div class="p-table__tr">
-								<div class="p-table__th">
-									使用技術
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										使用技術
+									</div>
+									<div class="p-table__td">
+										Unity / C#
+									</div>
 								</div>
-								<div class="p-table__td">
-									Unity / C#
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										githubリポジトリ
+									</div>
+									<div class="p-table__td">
+										<a href="https://github.com/daima4657/climber-of-penguin" target="_blank">https://github.com/daima4657/climber-of-penguin</a>
+									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 					</div>
