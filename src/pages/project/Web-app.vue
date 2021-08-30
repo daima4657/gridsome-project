@@ -46,7 +46,7 @@
 										githubリポジトリ
 									</div>
 									<div class="p-table__td">
-										https://github.com/daima4657/memento2
+										<a href="https://github.com/daima4657/memento2" target="_blank">https://github.com/daima4657/memento2</a>
 									</div>
 								</div>
 							</div>
@@ -83,14 +83,22 @@
 										<a href="https://master.d2x555rlmyfvhs.amplifyapp.com/chat/" target="_blank">https://master.d2x555rlmyfvhs.amplifyapp.com/chat/</a>
 									</div>
 								</div>
-							<div class="p-table__tr">
-								<div class="p-table__th">
-									使用技術
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										使用技術
+									</div>
+									<div class="p-table__td">
+										Nuxt.js / Amplify / AppSync / CloudFront / S3 / DynamoDB / Cognito
+									</div>
 								</div>
-								<div class="p-table__td">
-									Nuxt.js / Amplify / AppSync / CloudFront / S3 / DynamoDB / Cognito
+								<div class="p-table__tr">
+									<div class="p-table__th">
+										githubリポジトリ
+									</div>
+									<div class="p-table__td">
+										<a href="https://github.com/daima4657/parrot" target="_blank">https://github.com/daima4657/parrot</a>
+									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 					</div>
