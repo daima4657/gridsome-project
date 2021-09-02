@@ -19,7 +19,7 @@
 									<div class="__text">MEMENTO</div>
 								</h2>
 								<div class="p-project_single__head__text">
-									<p class="p-text_block">LaravelとAWS EC2の組み合わせによるメモアプリです。<br>現状はサインインとCRUDが出来るようになった段階であり、今後は特定の用途に特化した機能の追加を行っていきたいと考えています。</p>
+									<p class="p-text_block">LaravelとAWS EC2の組み合わせによるメモアプリです。<br>現状はサインインとCRUDが出来るようになった段階であり、今後は特定の用途に特化した機能の追加を行っていきたいと考えています!</p>
 								</div>
 							</div>
 						</div>
